@@ -13,7 +13,7 @@ items = {}
 
 @app.get("/", tags=["Root"])
 async def root():
-    return {"greeting": "Hello, World!", "message": "Welcome to FastAPI!"}
+    return {"greeting": "Hello, World!", "message": "Welcome to EverpayAPI!"}
 
 @app.post("/items", response_model=Item, tags=["Item"])
 async def create_item(item: Item):
